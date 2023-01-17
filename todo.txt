@@ -1,0 +1,26 @@
+node og express
+* router
+* express
+* nodemon
+* cross-env
+* CSR vs SSR
+
+
+REST api convention
+
+package.json
+
+JAVASCRIPT
+* redirecting
+*type coersion 
+*fetching
+*enviroment vaariables
+* injecting data
+
+* Hoisting
+
+* import/export 
+
+package.json
+
+public/static files

@@ -1,0 +1,25 @@
+body{
+    background-color: #e4d5b7;
+}
+.overskrift{
+        display: -webkit-flex;
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        border-bottom: 2px gray dotted;
+        font-size: 25px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        margin-top: 0;
+}
+
+.content {
+    text-align: left;
+    font-family: "Trebuchet MS", serif;
+    color: #190a00ff;
+    padding: 100px 20px 20px 20px;
+
+    text-align: left;
+    padding-right: 20px; 
+    line-height: 1.5;
+}

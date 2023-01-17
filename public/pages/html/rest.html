@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    %%PAGE_CSS_LINK%%
+
+    <title>%%TAB_TITLE%%</title>
+</head>
+<body>
+
+    <h1 class="overskrift">REST API</h1>
+    <span>
+
+In most application we use the client-server architecture. 
+the app itself is the client or the front end part.
+undeer the hood, it need to talk to the server or the backend
+to get or save the data.
+This communications happens using the http protocol.
+The same procotol that powers our app.
+
+So on the server we expose a bunch of services
+that are accesible via the http protocol. 
+the client can then directly call these services by sending
+http requests. Now this is where rest comes into the picture.
+
+REST stands for representational state transfer
+
+REST is a convention for building the http services.
+So we use simple http protocol principles to provide support 
+to create, read, update and delete data
+We refer to these operation all together as CRUD operations.
+    </span>
+
+
+    <h1 class="overskrift">Server-side rendering</h1>
+        <span class="content">
+
+            Whenever you visit a website, your browser makes a request to the server that contains the contents of the website. 
+            Once the request is done processing, your browser gets back the fully rendered HTML and displays it on the screen. 
+            If you then decide to visit a different page on the website, your browser will once again make another request for the new information. 
+            This will occur each and every time you visit a page that your browser does not have a cached version of.
+
+            It does not matter if the new page only has a few items that are different than the current page, 
+            the browser will ask for the entire new page and will re-render everything from the ground up.
+
+            What would actually happen would be that the entire new page would be rendered, and not just the new content.
+    
+        </span>
+
+        <h1 class="overskrift">Client-side rendering</h1>
+        <span class="content">
+            So instead of getting all of the content from the HTML document itself, you are getting a bare-bones HTML document with a JavaScript file
+            that will render the rest of the site using the browser.
+    
+           The server is now only responsible for loading the bare minus of the website. The main boilerplate. 
+           Everything else is handled by a client-side JavaScript library,
+    
+           If you were to load only the html without the Javascript, you will get a blank screen
+           There is nothing to load from the html itself since the actual content needs to be rendered using JavaScript.
+    
+           You are rendering items with the browser, so it will instead use JavaScript to load the new content 
+           and make sure that only the new content is rendered. Everything else will be left alone.
+    
+           This is much faster since you are only loading a very small section of the page to fetch the new content, instead of loading the entire page.
+        </span>
+</body>
+</html>

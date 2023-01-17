@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    %%PAGE_CSS_LINK%%
+
+    <title>%%TAB_TITLE%%</title>
+    
+</head>
+<body>
+    <h2 class="overskrift">Variables in JS</h2>
+    <span class="content">
+        
+    Here we have some code using let as the variable keyword
+    <code>
+        function start(){
+            for (let i=0; i< 5; i++){
+                console.log(i)
+            }
+            console.log(i)
+        }
+    </code>
+
+    if we try to log out i outside the for-loop-block we will get an error.
+    But if we change the variable-keyword to var, the error disappear, i becomes accesable outside the loop-block. 
+    When using var, the scope is not limited to the block in which it is defined.
+    it is limited to the function in which it is defined.
+    Before ES6 var was the only way to declare varaibles aand contants.
+    Starting from ES&, aslo called ES2015, now we have two new keywords 
+    let and const, to define different variables and constants. These two keywords
+    creates block scope variables while var creates function scoped variables
+           
+        </span> 
+
+    <h1 class="overskrift"> Import & Export</h1>
+    <span class="content">
+        The export declaration is used to export values from a JavaScript module. 
+        Exported values can then be imported into other programs with the import declaration. 
+        when a module updates the value of a binding that it exports, the update will be visible in its imported value.
+        The imported bindings are called live bindings because they are updated by the module that exported the binding. 
+        
+        In order to use the export declaration in a source file, the file must be interpreted by the runtime as a module. 
+        In HTML, this is done by adding type="module" to the script-tag or adding this to the package.json file. 
+        Modules are automatically interpreted in strict mode.
+
+    </span>
+
+    <h1 class="overskrift"> Type Coerection</h1>
+    <span class="content">
+        Type coercion is the automatic or implicit conversion of values from one data type to another (such as strings to numbers)
+
+        <code>
+            const value1 = "5";
+            const value2 = 9;
+            let sum = value1 + value2;
+        </code>
+
+        In the above example, JavaScript has coerced the 9 from a number into a string and then concatenated the two values together, 
+        resulting in a string of 59. JavaScript had a choice between a string or a number and decided to use a string.
+
+The compiler could have coerced the 5 into a number and returned a sum of 14, but it did not. 
+To return this result, you'd have to explicitly convert the 5 to a number using the Number() method:
+
+<code>
+    sum = Number(value1) + value2;
+    
+</code>
+
+    </span>
+    <h1 class="overskrift">Hoisting</h1>
+    <span class="content">
+        JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, 
+        variables or classes to the top of their scope, prior to execution of the code.
+
+        any of the following behaviors may be regarded as hoisting.
+        Being able to use a variable's value in its scope before the line it is declared. ("Value hoisting")
+        Being able to reference a variable in its scope before the line it is declared, without throwing a ReferenceError, 
+        but the value is always undefined. ("Declaration hoisting")
+The declaration of the variable causes behavior changes in its scope before the line in which it is declared.
+
+    </span>
+</body>
+</html>
+
+
+ 
+   

@@ -1,0 +1,161 @@
+body{
+    /*defining css-properties/variables
+    purpose of this is to define these values once and then we can reference them 
+    multiple times throughout the stylesheet  
+    */
+    --color--primary: #009579;
+    
+    /*this is going to be a darker version of the primary color*/
+    --color--primary-dark: #007f67;
+    --color--secondary: #252c6a;
+    --color--error: #cc3333;
+    --color--succes: #4bb544;
+    --border-radius:4px
+    
+    
+    
+    margin: 0;
+    height: 100vh;
+    
+    /*these three are going to vertically and horizontally center oure actual container for both the forms*/
+   
+    display: flex;
+    /*align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    
+    /*the image is going to take up the entire width of the background*/
+    background-size:cover;
+    
+    }
+    
+    .container{
+
+        /*the actual width is going to shrink down to whaatever it needs to be*/
+        width: 400px;
+        max-width: 400px;
+        /*this is saying one units of the base-font-size 
+        so essentially  1rem is going to be 18px and 2rem is going to be 38px
+        */
+        margin: 1rem;
+        padding: 2rem;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+        border-radius: var(--border-radius);
+        background: #ffffff;
+    }
+    
+    /*setting fonts for text in both the container, the input in the form and for the button in the form
+    customize your own fonts go to: fonts.google
+    */
+    .container,
+    .form__input,
+    .form__button {
+        font: 500 1rem 'Quicksand', sans-serif;
+    }
+    
+    /*this is going to toggle the existing form hidden class btw the loging and the signUp form
+    depending on what the user selected 
+    */
+    .form--hidden {
+        display: none;
+    }
+    
+    /*
+    this reference to the elements inside the form, so first-child is the first element inside the form and last-child is the last element inside the form*/
+    
+    .form > *:first-child {
+        margin-top: 0;
+    }
+    
+    .form > *:last-child {
+        margin-bottom: 0;
+    }
+    
+    .form__title {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    form__message {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .form__message--success {
+        color: var(--color-success);
+    }
+    
+    .form__message--error {
+        color: var(--color-error);
+    }
+    
+    .form__input-group {
+        /*this gives some space btw the two input-fields*/
+        margin-bottom: 1rem;
+    }
+    
+    .form__input {
+        display: block;
+        width: 100%;
+        padding: 0.75rem;
+        box-sizing: border-box;
+        border-radius: var(--border-radius);
+        border: 1px solid #dddddd;
+        outline: none;
+        background: #eeeeee;
+        transition: background 0.2s, border-color 0.2s;
+    }
+    
+    /*this makes it possible for the inputfield to be white, when the input-field is in focus*/
+    .form__input:focus {
+        border-color: var(--color-primary);
+        background: #ffffff;
+    }
+    
+    .form__input--error {
+        color: var(--color-error);
+        border-color: var(--color-error);
+    }
+    
+    .form__input-error-message {
+        margin-top: 0.5rem;
+        font-size: 0.85rem;
+        color: var(--color-error);
+    }
+    
+    .form__button {
+        width: 100%;
+        padding: 1rem 2rem;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: #ffffff;
+        border: none;
+        border-radius: var(--border-radius);
+        outline: none;
+        cursor: pointer;
+        background: var(--color-primary);
+    }
+    
+    .form__button:hover {
+        background: var(--color-primary-dark);
+    }
+    
+    /*this style is going to be applied when you have clicked on the button*/
+    .form__button:active {
+        /*transformin the button by reducing the size of the button by 2% when you press the button*/
+        transform: scale(0.98);
+    }
+    
+    .form__text {
+        text-align: center;
+    }
+    
+    .form__link {
+        color: var(--color-secondary);
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .form__link:hover {
+        text-decoration: underline;
+    }
